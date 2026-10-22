@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "aditBoard") (type "KiCad") (uri "${KIPRJMOD}/apw-meister.pretty") (options "") (descr ""))
+)

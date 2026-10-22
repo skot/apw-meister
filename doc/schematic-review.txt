@@ -1,0 +1,162 @@
+apw-meister schematic and component review — 2026-10-22
+
+FOLLOW-UP: The user authorized fixes and confirmed a 3.3 V APW12 interface.
+The schematic now contains the review fixes described in
+apw-meister-schematic.md. The findings below are the original review record,
+not a list of current defects. Independent ERC is now 0 errors / 0 warnings.
+Released-EN behavior still needs confirmation on hardware; the enable stage
+now releases the line on reset/power loss. The Backplane netlist discrepancy
+remains a tool limitation and must be resolved before using its PCB sync.
+
+Scope: canonical apw-meister.kicad_sch and its assigned component/footprint
+choices. This review did not modify the schematic or PCB. No hardware testing
+was performed. PCB placement, routing, and fabrication readiness are outside
+this pass; the PCB still represents the original design.
+
+1. HIGH: PSU enable does not have a guaranteed default-off state.
+
+J2.5 PSU_EN connects directly to U3 GPIO25. The local PSU_PICO.md identifies
+enable as active-low; RP2040 GPIO25 defaults to a weak pull-down during reset.
+There is no external circuit establishing off during reset/boot. An APW12
+internal pull-up might dominate, so accidental turn-on is a risk, not a
+measured outcome. Original bitcrane main.rs also initializes GPIO25 low.
+For a USB adapter, establish and test the desired default-off behavior during
+reset, BOOTSEL, USB removal, firmware crash, and independent PSU power-up.
+A normally-off open-drain transistor with a gate pull-down and a verified
+PSU-side pull-up is one possible implementation; account for its inversion
+in firmware. Do not assume a pull-up to USB-derived 3V3 solves USB removal.
+
+2. HIGH / UNRESOLVED: APW12 electrical interface needs hardware validation.
+
+SDA, SCL, and enable connect directly to RP2040 pins. Check the intended PSU
+revision's idle voltages and pull-ups with USB both powered and disconnected.
+The RP2040 is not 5 V tolerant. GPIO14/15/25 are fault-tolerant digital pins,
+however: its datasheet describes little input current below 3.63 V with IOVDD
+off. The GP28/ADC back-power warning in the Pico adapter documentation must
+not be transferred indiscriminately to this GPIO25 design.
+
+No external SDA/SCL pull-ups are fitted. Reference firmware explicitly enables
+internal pull-ups and bit-bangs at 400 Hz, despite a stale 400 kHz comment in
+main.rs. This can explain operation without board pull-ups; it does not
+validate normal-speed I2C. Reserve optional pull-up footprints, then select
+values against actual PSU pull-ups, bus capacitance, voltage, and speed.
+
+3. MEDIUM / CONFIRMED: USB series resistors differ from RP2040 requirements.
+
+R2 and R3 are 33 ohms. Raspberry Pi specifies 27 ohms on both USB data lines.
+Change both values and their exact purchasing identifiers to 27-ohm parts;
+place them near RP2040 during layout. 33 ohms does not prove USB will fail,
+but is an avoidable departure from the specified termination.
+
+4. MEDIUM: Crystal network is not a validated reference implementation.
+
+Y1 C9002 / X322512MSB4SI is a 12 MHz, 20 pF-load crystal with 80-ohm maximum
+ESR. C2/C4 are each 30 pF, giving 15 pF plus stray capacitance. Thus 20 pF
+requires about 5 pF of effective stray capacitance, which is not established.
+There is no XOUT series damping resistor. Use a characterized crystal/load/
+damping combination, or validate startup and drive over voltage/temperature.
+The Raspberry Pi reference uses ABM8-272-T3 (10 pF load, 50-ohm ESR), 15 pF
+capacitors and 1 kohm series resistance at 3.3 V. Do not blindly transfer the
+1 kohm value to a different crystal without checking startup margin.
+
+5. MEDIUM: LED supply bypassing is incomplete.
+
+U1 has no dedicated local bypass capacitor. C17 is shared with the regulator
+input and is not a substitute for deliberate LED-local placement. Add a
+100 nF ceramic at U1 VDD/GND and consider the manufacturer's suggested DIN
+series protection resistor. The exact SK6812SIDE-A-RVS datasheet specifies
+VIH(min) = 2.6 V at 5 V: direct 3.3 V logic is supported; the generic 0.7*VDD
+threshold sometimes attributed to addressable LEDs is not applicable here.
+
+6. MEDIUM: BOM fields disagree about several parts.
+
+J1 PARTNO is GCT USB4105-GF-A, whereas C2988369 is G-Switch GT-USB-7010ASV.
+The two drawings agree on the principal contact, locating-hole and mounting
+stake positions used by the footprint. This is an identity/approved-alternate
+issue, not a demonstrated pad mismatch. G-Switch specifies a 0.8 mm board in
+its drawing; confirm the intended board thickness/mechanical fit when choosing
+the actual connector. Make MPN, manufacturer, supplier code and footprint
+describe the selected part consistently.
+
+SW2/SW3 show GT-TC029B-H025-L1N but PARTNO and footprint specify CS1213AGF260.
+Both are DNP and excluded from BOM. Confirm that deliberately omitting boot/
+reset switches matches the initial programming/recovery plan (SWD is on USB-C
+SBU contacts). R4/R5 similarly mix a Stackpole MPN with Uniroyal LCSC codes,
+although the latter are electrically suitable 5.1 kohm resistors.
+J2 should gain explicit HCTL / HC-PHD-2*3A identity fields.
+
+7. CONNECTOR DOCUMENTATION: preserve the reference's custom numbering.
+
+The J2 footprint is physically identical to bitcrane J10, but its numbering
+is row-sequential rather than the alternating numbering in HCTL's drawing.
+With the footprint's pin 1 at lower right, its rows are:
+
+    6  5  4       upper row, local y = -1 mm
+    3  2  1       lower row, local y = +1 mm
+
+HCTL's corresponding drawing numbers those positions:
+
+    6  4  2
+    5  3  1
+
+Therefore the numeric signal list in the schematic documentation is a
+project-specific convention. It matches bitcrane; this review does not
+establish a physical wiring error. Add a keyed mating/board-view diagram and
+continuity-check a real cable. Do not substitute a conventionally numbered
+footprint without remapping the schematic to preserve physical connectivity.
+The generic Odd_Even symbol does not communicate this custom numbering.
+
+8. SOURCING / ROBUSTNESS FOLLOW-UP.
+
+JLC's live lookup returned stock 0 for U2 C2843335 / W25Q16JVUXIQ on the review
+date. The flash is electrically appropriate, but select an available exact
+package/order-code option before assembly. Its IQ suffix has quad enable fixed
+on. QSPI_SD3 is an active data line: reject the generic audit suggestion to add
+a 100 nF reset capacitor there. Its unusual 1.6 x 0.2 mm central pad agrees
+with the Winbond UX package drawing; it is not an obvious footprint error.
+
+There is no explicit ESD protection on USB or APW signal contacts. Consider
+low-capacitance USB protection and suitable connector-side APW protection for
+a frequently handled cable adapter. This is a robustness recommendation,
+not evidence of a DC connectivity failure.
+
+Checks that passed and limits
+
+APW GPIO assignments and the reference's physical connector mapping agree.
+No power rail is exported to the APW connector. Test pads 1/4 remain isolated
+from MCU signals. AP2112K-3.3 pin mapping, voltage range, and nominal 1 uF
+input/output capacitance meet its datasheet guidance; final effective capacitor
+values and thermal behavior remain layout/load checks. Flash supply/pinout,
+RP2040 power decoupling, USB-C CC resistors and data-pair duplication appear
+consistent. No definitive flash, regulator, or LED logic-level incompatibility
+was found.
+
+Konnect geometric checks found no shorted nets, single-pin nets, or orphan
+items. Independent ERC reports 0 errors / 17 inherited warnings, principally
+unspecified legacy pin types and unavailable library entries. These should be
+cleaned up for maintainability. The selected Backplane KiCad build still
+produces the previously documented contradictory net merges and ERC error;
+this is not a clean Backplane ERC sign-off. See apw-meister-schematic.md for
+the baseline comparison. Automated decoupling/power audits are net-based and
+do not establish placement quality; their generic recommendations were
+checked against the specific component datasheets.
+
+Evidence
+
+Local primary reference:
+  ~/Bitcoin/bitcrane/bitcrane-v3.1/bitcrane.kicad_sch (J10)
+  ~/Bitcoin/bitcrane/bitcrane-fw/src/main.rs:166
+  ~/Bitcoin/bitcrane/bitcrane-fw/src/control/psu.rs
+  ~/Bitcoin/bitcrane/psu-pico adapter/bitcrane-fw/PSU_PICO.md:43
+
+Manufacturer sources:
+  https://datasheets.raspberrypi.com/rp2040/hardware-design-with-rp2040.pdf
+  https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf
+  https://www.diodes.com/datasheet/download/AP2112.pdf
+  https://www.winbond.com/resource-files/w25q16jv%20spi%20revh%2004082019%20plus.pdf
+  https://gct.co/files/drawings/usb4105.pdf
+  https://datasheet.lcsc.com/datasheet/pdf/eba079fa2435c5dc52dab7f5af623f88.pdf?productCode=C2890037
+  https://datasheet.lcsc.com/datasheet/pdf/a1d5a66cf718dd88763ab794dba802b2.pdf?productCode=C2988369
+
+HCTL and YXC supplier-hosted manufacturer drawings, footprint pad inspections,
+ERC and audit outputs are retained under ignored build/schematic-review/.
