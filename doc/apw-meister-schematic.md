@@ -70,7 +70,7 @@ The MCU uses the project-local standard KiCad UQFN20 3 × 3 mm STEP as a **gener
 
 The board outline, connector locations and six-layer stackup are retained from the RP2354A layout. The CH32 MCU, bypass capacitor and bus-isolation parts are placed. Obsolete RP routing has been removed on this branch so it cannot accidentally connect the new pinout. The board requires routing, planes and final DRC before fabrication. The inherited USB connector locating-hole clearance issues are still open.
 
-Power routing defaults remain 0.50 mm for VBUS/GND and 0.40 mm for 3.3 V, with 0.60/0.30 mm vias. Ordinary signals default to 0.15 mm with 0.50/0.30 mm vias. Short neckdowns may be needed at fine-pitch pins. USB differential geometry must be checked against the chosen fabrication stackup. Unused RP core-regulator netclasses are historical settings with no connected loads.
+Power routing defaults remain 0.50 mm for VBUS/GND and 0.40 mm for 3.3 V, with 0.60/0.30 mm vias. Ordinary signals default to 0.1016 mm (4 mil) with 0.45/0.30 mm vias. Short neckdowns may be needed at fine-pitch pins. USB differential geometry must be checked against the chosen fabrication stackup. Unused RP core-regulator netclasses are historical settings with no connected loads.
 
 ## References
 
@@ -80,3 +80,21 @@ Power routing defaults remain 0.50 mm for VBUS/GND and 0.40 mm for 3.3 V, with 0
 - [DMG1012T datasheet](https://www.diodes.com/datasheet/download/DMG1012T.pdf), pin assignment and low-voltage gate characteristics.
 - [AP2112 datasheet](https://www.diodes.com/assets/Datasheets/AP2112.pdf), enable and automatic output discharge.
 - Local `~/Bitcoin/bitcrane/bitcrane-v3.1` J10 and `~/Bitcoin/bitcrane/bitcrane-fw/src/control/psu.rs`.
+
+## Track and via manufacturing limits
+
+Imported from `~/Bitcoin/bitaxe/displays/bonanzaDisplay-v3/bonanzaDisplay.kicad_pro` on 2026-10-26 for the JLCPCB six-layer standard process:
+
+| Setting | Value |
+|---|---:|
+| Minimum track width | 0.1016 mm (4 mil) |
+| Minimum copper clearance (already matched) | 0.1016 mm (4 mil) |
+| Minimum via pad diameter | 0.45 mm |
+| Minimum through drill | 0.30 mm |
+| Minimum via annular ring | 0.075 mm |
+
+The Default signal netclass uses those track/via sizes, and the minimum sizes are available in the routing dropdowns. Wider power/ground netclasses are retained. This import covers track/via sizes, not the source project's other DFM rules or stackup.
+
+[JLCPCB's published capabilities](https://jlcpcb.com/capabilities/pcb-capabilities/) support these dimensions for standard multilayer copper and place this via combination outside the listed small-via surcharge cases. This is a geometry check, not a manufacturing quote.
+
+DRC after import: two existing J1 hole-clearance violations, 73 unrouted connections, zero schematic/PCB parity issues. No new violations.
