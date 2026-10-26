@@ -13,4 +13,5 @@
   (lib (name "Switch") (type "KiCad") (uri "/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols/Switch.kicad_sym") (options "") (descr ""))
   (lib (name "apw-meister") (type "KiCad") (uri "${KIPRJMOD}/apw-meister.kicad_sym") (options "") (descr ""))
   (lib (name "rp2354") (type "KiCad") (uri "${KIPRJMOD}/rp2354.kicad_sym") (options "") (descr ""))
-  (lib (name "ampminer") (type "KiCad") (uri "${KIPRJMOD}/ampminer.kicad_sym") (options "") (descr "")))
+  (lib (name "ampminer") (type "KiCad") (uri "${KIPRJMOD}/ampminer.kicad_sym") (options "") (descr ""))
+  (lib (name "wch32") (type "KiCad") (uri "${KIPRJMOD}/wch32.kicad_sym") (options "") (descr "")))

@@ -392,7 +392,7 @@
       "mpn": "",
       "net_names": "",
       "ref_des": "",
-      "sch_revision": "3-internal-VREG",
+      "sch_revision": "WCH32",
       "sections": ""
     },
     "layer_pairs": [],
@@ -415,7 +415,7 @@
   "erc": {
     "erc_exclusions": [],
     "meta": {
-      "version": 0
+      "version": 1
     },
     "pin_map": [
       [
@@ -597,6 +597,7 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
+      "empty_label_name": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
       "field_name_whitespace": "warning",
@@ -619,11 +620,16 @@
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
+      "pin_map_bad_pad": "error",
+      "pin_map_duplicate_pad": "error",
+      "pin_map_stale_pin": "warning",
+      "pin_map_unmapped_pin": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -635,7 +641,10 @@
       "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
-      "wire_dangling": "error"
+      "variant_symbol_incompatible": "warning",
+      "variant_symbol_invalid": "error",
+      "wire_dangling": "error",
+      "wired_implicit_power": "warning"
     }
   },
   "libraries": {
@@ -1039,7 +1048,7 @@
       {
         "filename": "apw-meister.kicad_sch",
         "name": "apw-meister",
-        "uuid": "0c5a2978-3f7a-4586-9b29-75f4eaf2eb2d"
+        "uuid": "44d3c7b8-47a6-46d2-92fa-1428daf039d0"
       }
     ],
     "used_designators": "",
@@ -1047,7 +1056,7 @@
   },
   "sheets": [
     [
-      "0c5a2978-3f7a-4586-9b29-75f4eaf2eb2d",
+      "44d3c7b8-47a6-46d2-92fa-1428daf039d0",
       "apw-meister"
     ]
   ],
