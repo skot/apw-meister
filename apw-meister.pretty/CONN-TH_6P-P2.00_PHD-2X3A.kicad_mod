@@ -115,7 +115,7 @@
 			)
 		)
 	)
-	(attr smd)
+	(attr through_hole)
 	(fp_line
 		(start -4 -2.5)
 		(end 4 -2.5)
@@ -394,6 +394,7 @@
 			)
 		)
 	)
+	(fp_rect (start -4.25 -2.75) (end 4.25 2.75) (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd"))
 	(pad "1" thru_hole circle
 		(at 2 1 180)
 		(size 1.4 1.4)

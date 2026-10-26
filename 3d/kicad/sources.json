@@ -1,0 +1,58 @@
+[
+  {
+    "file": "${KIPRJMOD}/3d/kicad/C_0402_1005Metric.step",
+    "source": "KiCad installed standard 3D model library",
+    "upstream": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "original_model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+    "sha256": "03e44c4b2b727b8d4b6b1fd598cbd12dd5e614f1dfeefa96a92a07e3a3b312a2",
+    "copied": "2026-10-22"
+  },
+  {
+    "file": "${KIPRJMOD}/3d/kicad/USON-10_2.5x1.0mm_P0.5mm.step",
+    "source": "KiCad installed standard 3D model library",
+    "upstream": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "original_model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/USON-10_2.5x1.0mm_P0.5mm.step",
+    "sha256": "d9d0628ead2ac2bab888344afbd0ef8b0f5a4ba37641ccc66dcbe300e3a74ac0",
+    "copied": "2026-10-22"
+  },
+  {
+    "file": "${KIPRJMOD}/3d/kicad/R_0402_1005Metric.step",
+    "source": "KiCad installed standard 3D model library",
+    "upstream": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "original_model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0402_1005Metric.step",
+    "sha256": "91507e5af4251cb4ef38e04889c9b98da29904432bd83786bba13ae9b605eacb",
+    "copied": "2026-10-22"
+  },
+  {
+    "file": "${KIPRJMOD}/3d/kicad/SW_SPST_B3U-1000P.step",
+    "source": "KiCad installed standard 3D model library",
+    "upstream": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "original_model": "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.step",
+    "sha256": "4b5ee4da023d76030db22a90f5835f3691d5e4e9fc41b3f37b2c5922c65d307b",
+    "copied": "2026-10-22"
+  },
+  {
+    "file": "${KIPRJMOD}/3d/kicad/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+    "source": "KiCad installed standard 3D model library",
+    "upstream": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "original_model": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal.step",
+    "sha256": "6338ce740fa231c2d3dcc6384e0576994a47240a312a21413cb85d76990a69a0",
+    "copied": "2026-10-22"
+  },
+  {
+    "file": "${KIPRJMOD}/3d/kicad/Texas_R-PUSON-N14.step",
+    "source": "KiCad installed standard 3D model library",
+    "upstream": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "original_model": "${KICAD10_3DMODEL_DIR}/Package_SON.3dshapes/Texas_R-PUSON-N14.step",
+    "sha256": "f8a35b6e9ff286632ba08e69f946c13ea52c1c5e76a563c017eb804baaa624bf",
+    "copied": "2026-10-22"
+  },
+  {
+    "file": "${KIPRJMOD}/3d/kicad/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+    "source": "KiCad installed standard 3D model library",
+    "upstream": "https://gitlab.com/kicad/libraries/kicad-packages3D",
+    "original_model": "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+    "sha256": "d2a89df82ee5f0f56ef23ee59c8161b8d4e92af2b21959d72778316dde3f9f22",
+    "copied": "2026-10-22"
+  }
+]

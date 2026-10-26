@@ -18,6 +18,7 @@ _autosave-*
 fp-info-cache
 *.kicad_sch.lck
 *.kicad_pcb.lck
+*.kicad_pro.lck
 
 # Netlist files (exported from Eeschema)
 *.net

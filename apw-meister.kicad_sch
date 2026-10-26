@@ -6095,6 +6095,498 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "SW_Push_3"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_3_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SW_Push_4"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_4_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "SW_Push_5"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_5_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -14739,7 +15231,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 36.83 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -15007,7 +15499,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 63.5 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -15199,7 +15691,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 131.826 58.166 90)
 			(hide yes)
 			(show_name no)
@@ -15342,6 +15834,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 130.81 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7696e620-3faa-477f-b57a-274171357968")
 		)
@@ -15356,16 +15859,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 130.81 58.42 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:L_Ferrite")
 		(at 60.96 143.51 90)
@@ -16136,7 +16630,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 40.64 127 0)
 			(hide yes)
 			(show_name no)
@@ -16268,6 +16762,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 40.64 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0244fea9-2944-4239-bddb-b1457bdb84b7")
 		)
@@ -16282,16 +16787,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 40.64 127 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 280.67 33.02 180)
@@ -16325,7 +16821,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 280.67 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -16504,7 +17000,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 231.14 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -16647,6 +17143,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 231.14 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "7798659a-bb37-406d-9457-843657a57908")
 		)
@@ -16661,16 +17168,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 231.14 201.93 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 200.66 33.02 180)
@@ -16705,7 +17203,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 200.66 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -16887,7 +17385,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 256.54 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -17078,7 +17576,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 254 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -17739,7 +18237,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 269.24 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -17887,6 +18385,7 @@
 		)
 	)
 	(symbol
+		(lib_name "SW_Push_5")
 		(lib_id "Switch:SW_Push")
 		(at 110.49 82.55 0)
 		(mirror y)
@@ -17920,7 +18419,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_B3U-1000P"
+		(property "Footprint" "aditBoard:SW_SPST_B3U-1000P"
 			(at 110.49 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -18076,7 +18575,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 246.38 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -18219,6 +18718,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 246.38 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b315e2c8-7f09-4b38-a982-5c5d07f0dfe6")
 		)
@@ -18233,16 +18743,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 246.38 125.73 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 39.37 33.02 0)
@@ -18354,7 +18855,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 189.23 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -18535,7 +19036,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 257.81 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -18790,7 +19291,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:Texas_R-PUSON-N14"
+		(property "Footprint" "aditBoard:Texas_R-PUSON-N14"
 			(at 332.74 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -18982,7 +19483,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 35.814 71.374 90)
 			(hide yes)
 			(show_name no)
@@ -19125,6 +19626,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 35.56 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "adcac7b4-c521-48b9-a2d9-c8c9f9162658")
 		)
@@ -19139,16 +19651,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 35.56 72.39 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "rp2354:RP2354A")
 		(at 170.18 119.38 0)
@@ -19505,7 +20008,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 115.57 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -19648,6 +20151,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 123.19 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f6b766c7-e735-4606-9124-ef8ad9124192")
 		)
@@ -19662,16 +20176,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 123.19 82.55 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x03_Odd_Even")
 		(at 78.74 175.26 0)
@@ -19982,7 +20487,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 74.93 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -20251,7 +20756,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 133.35 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -20431,7 +20936,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-523"
+		(property "Footprint" "aditBoard:SOT-523"
 			(at 142.24 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -20582,7 +21087,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 279.4 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -20773,7 +21278,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 36.83 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -20965,7 +21470,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 121.92 33.02 0)
 			(hide yes)
 			(show_name no)
@@ -21156,7 +21661,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 104.14 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -21345,7 +21850,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 207.01 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -21488,6 +21993,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 207.01 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "704bb1ad-3ca1-47b8-b54d-750874821b3b")
 		)
@@ -21502,16 +22018,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 207.01 67.31 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 124.46 207.01 90)
@@ -21543,7 +22050,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 124.46 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -21675,6 +22182,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 124.46 207.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "61194fb2-dc56-40fb-a7ff-2499d633c0e2")
 		)
@@ -21689,16 +22207,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 124.46 207.01 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 44.45 74.93 90)
@@ -21730,7 +22239,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 44.704 73.914 90)
 			(hide yes)
 			(show_name no)
@@ -21873,6 +22382,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 44.45 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3ff31c4d-8da4-4240-958c-da64e90896ef")
 		)
@@ -21887,16 +22407,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 44.45 74.93 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:Crystal_GND24")
 		(at 267.97 125.73 0)
@@ -21928,7 +22439,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
+		(property "Footprint" "aditBoard:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 267.97 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -22093,7 +22604,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 212.09 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -22271,7 +22782,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 99.06 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -22414,6 +22925,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 91.44 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "983aa68f-4e7a-42ed-a3f1-fe79c52a3dac")
 		)
@@ -22428,16 +22950,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 91.44 107.95 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_name "TestPoint_1")
 		(lib_id "Connector:TestPoint")
@@ -22557,7 +23070,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 254 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -22700,6 +23213,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 254 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c1ea7052-e2af-43c6-9067-431d00d11ac4")
 		)
@@ -22714,16 +23238,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 254 201.93 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:R_US")
 		(at 91.44 100.33 90)
@@ -22755,7 +23270,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 99.06 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -22898,6 +23413,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 91.44 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b9141826-ec52-44e2-a746-d8ef25216986")
 		)
@@ -22912,16 +23438,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 91.44 100.33 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 156.21 33.02 180)
@@ -22956,7 +23473,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 156.21 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -23135,7 +23652,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
+		(property "Footprint" "aditBoard:USON-10_2.5x1.0mm_P0.5mm"
 			(at 332.74 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -23318,7 +23835,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 144.78 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -23496,7 +24013,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "aditBoard:R_0402_1005Metric"
 			(at 137.16 217.17 0)
 			(hide yes)
 			(show_name no)
@@ -23628,6 +24145,17 @@
 				)
 			)
 		)
+		(property "Temperature Coefficient" "100ppm/degC"
+			(at 137.16 217.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9f2b2c2d-e5fc-4cda-b7d1-a03b6766ff7f")
 		)
@@ -23642,16 +24170,7 @@
 				)
 			)
 		)
-	
-		(property "Temperature Coefficient" "100ppm/degC"
-			(at 137.16 217.17 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		))
+	)
 	(symbol
 		(lib_id "Device:C")
 		(at 246.38 33.02 180)
@@ -23686,7 +24205,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 246.38 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -23867,7 +24386,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 223.52 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -24252,7 +24771,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "aditBoard:C_0402_1005Metric"
 			(at 234.95 25.4 0)
 			(hide yes)
 			(show_name no)
@@ -24486,7 +25005,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "fee7473f-ab6c-4cda-933c-db620a182892")
 		(property "Reference" "SW3"
 			(at 109.22 62.23 0)
@@ -24510,7 +25029,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_B3U-1000P"
+		(property "Footprint" "aditBoard:SW_SPST_B3U-1000P"
 			(at 110.49 64.77 0)
 			(hide yes)
 			(show_name no)

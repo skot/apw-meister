@@ -181,15 +181,8 @@
 		(uuid "e9bd46a2-195d-4f8a-a422-b0d63115a811")
 	)
 	(embedded_fonts no)
-	(model "/Users/skot/Work/Bitcoin/bitcart/aditBoard/aditBoard.3dshapes/SOT-25-5_L2.9-W1.6-P0.95-LS2.8-BL.wrl"
-		(offset
-			(xyz 0 -0 -0)
-		)
-		(scale
-			(xyz 1 1 1)
-		)
-		(rotate
-			(xyz 0 0 0)
-		)
-	)
+	(model "${KIPRJMOD}/aditBoard.3dshapes/SOT-25-5_L2.9-W1.6-P0.95-LS2.8-BL.wrl"
+    (offset (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0)))
 )
