@@ -751,6 +751,17 @@
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3
+      },
+      {
+        "clearance": 0.1016,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": -1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.15,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -784,6 +795,22 @@
       {
         "netclass": "Analog_Supply",
         "pattern": "/VREG_AVDD"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB_DP"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB_DN"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB_DP_MCU"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/USB_DN_MCU"
       }
     ]
   },
@@ -814,6 +841,7 @@
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
+      "include_byte_order_mark": false,
       "keep_line_breaks": false,
       "keep_tabs": false,
       "name": "---",
@@ -910,6 +938,7 @@
             "show": false
           }
         ],
+        "filter_scope": "reference",
         "filter_string": "",
         "group_symbols": true,
         "include_excluded_from_bom": false,
@@ -1000,6 +1029,7 @@
           "show": false
         }
       ],
+      "filter_scope": "reference",
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": false,
@@ -1008,6 +1038,20 @@
       "sort_field": "Datasheet"
     },
     "bus_aliases": null,
+    "compare_symbols": {
+      "dnp_flags": false,
+      "exclude_from_board_flags": true,
+      "exclude_from_bom_flags": false,
+      "exclude_from_position_file_flags": true,
+      "extra_fields": false,
+      "field_positions": false,
+      "field_styles": false,
+      "field_texts": true,
+      "field_visibilities": false,
+      "missing_fields": true,
+      "pin_alt_function_definitions": true,
+      "pin_name_number_visibilities": false
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -1029,6 +1073,7 @@
       "operating_point_overlay_v_range": "~V",
       "overbar_offset_ratio": 1.23,
       "pin_symbol_size": 25.0,
+      "show_dnp_markers": true,
       "text_offset_ratio": 0.15
     },
     "legacy_lib_dir": "",

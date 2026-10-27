@@ -40,3 +40,6 @@ fp-info-cache
 # Local application state
 /.backplane/
 .DS_Store
+
+# KiCad automatic local history (nested backup repository)
+/.history/

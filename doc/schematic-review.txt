@@ -4,14 +4,22 @@ KiCad 10.99.0-bp.6
 Schematic ERC: 0 violations.
 Schematic-to-PCB parity: 0 issues.
 Connectivity: all 118 component pin / PCB pad nets match.
-29 footprint positions: 25 fitted purchased parts, 2 DNP development switches, 2 copper test pads.
+29 component/test-pad footprint positions plus one decorative rear logo: 25 fitted purchased parts, 2 DNP development switches, 2 copper test pads.
 All purchased positions have JLCPCB/LCSC numbers and resolved local 3D models.
-Board outline, connector positions, six-layer stackup and bottom-side DNP switch positions preserved.
+CH32 placement compacted to 14 x 28 mm from 16 x 35 mm (30% less area).
+APW12 remains at the top edge; USB remains at the bottom edge with the original overhang.
+Six-layer stackup and manufacturing rules preserved. Fitted SMD parts remain on top; DNP switches remain on bottom.
+First routing pass complete: 269 track segments, 49 through vias, three filled zone objects spanning six copper layers.
+In1.Cu and In4.Cu are ground references; In2.Cu distributes 3.3 V and In3.Cu distributes 5 V.
+Power layers also carry selected signal crossings; no signal tracks occupy the ground reference layers.
+Filled-board DRC: zero unrouted connections, zero schematic-parity issues, two inherited errors and two warnings.
+Latest manual edits: relocated bottom DNP buttons, rear logo, and rounded board corners.
+Warnings: leftover BOOT trace stub (Net-(R6-Pad2)); decorative logo has no courtyard.
+Logo is correctly excluded from BOM and position files.
 
 PCB is not ready for manufacture:
-- 73 unrouted connections; RP2354A copper removed for the CH32 pinout.
 - Two inherited J1 pad-to-locating-hole clearances of 0.1944 mm violate the 0.20 mm rule.
-- Ground planes, USB geometry and final routing/fabrication checks remain.
+- USB geometry and final routing/fabrication review remain.
 
 CH32 firmware port and powered hardware/USB/APW testing have not been performed.
 See apw-meister-schematic.md for the pin map, boot/reset operation and source references.

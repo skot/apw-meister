@@ -3,7 +3,7 @@
   "rp2354_checkpoint": "2b5b7f9 on main",
   "erc_violations": 0,
   "schematic_pcb_parity_issues": 0,
-  "unique_footprints": 29,
+  "unique_footprints": 30,
   "verified_pad_nets": 118,
   "purchased_positions": 27,
   "fitted_purchased_positions": 25,
@@ -16,10 +16,39 @@
     "TP2"
   ],
   "local_3d_models_resolved": 27,
-  "outline_connectors_stackup_preserved": true,
-  "drc_violations": 2,
-  "drc_remaining": "Inherited J1 pad-to-locating-hole clearance: 0.1944 mm against 0.20 mm rule (two locations).",
-  "unrouted_connections": 73,
+  "board_size_mm": [
+    14,
+    28
+  ],
+  "previous_board_size_mm": [
+    16,
+    35
+  ],
+  "area_reduction_percent": 30,
+  "six_layer_stackup_and_design_rules_preserved": true,
+  "connector_edges": "APW12 top, USB bottom",
+  "drc_violations": 4,
+  "drc_remaining": "Two inherited J1 pad-to-locating-hole clearance errors (0.1944 mm against 0.20 mm); leftover BOOT trace stub on Net-(R6-Pad2); decorative logo missing courtyard.",
+  "unrouted_connections": 0,
+  "routing_status": "First routing pass complete; final manufacturing and USB geometry review remain",
   "firmware": "CH32 port required; no firmware or hardware functional testing performed",
-  "runtime": "KiCad 10.99.0-bp.6"
+  "runtime": "KiCad 10.99.0-bp.6",
+  "track_segments": 269,
+  "vias": 49,
+  "filled_zones": 3,
+  "ground_reference_layers": [
+    "In1.Cu",
+    "In4.Cu"
+  ],
+  "power_planes": {
+    "In2.Cu": "3V3",
+    "In3.Cu": "5V"
+  },
+  "signal_crossings": "F.Cu/B.Cu with selected In2.Cu and In3.Cu crossings; ground reference layers contain no signal tracks",
+  "component_and_test_pad_footprints": 29,
+  "decorative_footprints": 1,
+  "zone_copper_layers": 6,
+  "drc_errors": 2,
+  "drc_warnings": 2,
+  "review_date": "2026-10-26"
 }
