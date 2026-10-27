@@ -1,6 +1,6 @@
 # apw-meister — CH32X035F8U6 revision
 
-The `WCH32` branch replaces the RP2354A with WCH's CH32X035F8U6. The complete RP2354A design and its initial routing are preserved on `main` at commit `2b5b7f9`.
+The `master` branch replaces the RP2354A with WCH's CH32X035F8U6. The complete RP2354A design and its initial routing are preserved on `main` at commit `2b5b7f9`.
 
 ## MCU and supply
 

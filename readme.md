@@ -4,7 +4,7 @@
 
 A CH32X035F8U6-based USB interface for the Antminer APW12 PSU data connector, derived from AditBoard v2.
 
-The `WCH32` branch contains the CH32 hardware migration. The RP2354A version, including its initial routing, is preserved on `main` at `2b5b7f9`.
+The `master` branch contains the CH32 hardware migration. The RP2354A version, including its initial routing, is preserved on `main` at `2b5b7f9`.
 
 The CH32 provides internal flash, clock and core regulation. The board retains its USB-powered 3.3 V LDO and adds MOSFET isolation to prevent APW I2C pull-ups from backfeeding an unpowered MCU. See the [schematic notes and firmware pin map](doc/apw-meister-schematic.md) and [BOM](doc/apw-meister-bom.csv).
 
